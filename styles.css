@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bell MT;
+}
+
+
+
+body {
+    background: url(motor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.pet-container {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    font-size: 25px;
+    color: lightgrey;
+    cursor: pointer;
+    animation: scale 3s ease-in-out forwards;
+}
+
+
+
+@keyframes scale {
+    0% {
+        transform: scaleX(0) rotate(0deg);
+    }
+
+    100% {
+        transform: scaleY(1) rotate(720deg);
+    }
+}
+
+
+#pet {
+    margin-top: 2rem;
+}
+
+
+.img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.img-container{
+    display: flex;
+    margin-top: 3rem;
+    background-color: black;
+    color: #fff;
+    border: 20px double grey;
+    font-size: 25px;
+    cursor: pointer;
+    column-gap: 10px;
+    padding: 12px;
+}
+
+
+.img-container:hover {
+    color: gray;
+}
+
+
